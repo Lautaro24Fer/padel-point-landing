@@ -1,10 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import MainPage from './App'
+import '../styles/globals.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <main className='h-screen w-screen p-16 bg-[#264492] text-white'>
+      <MainPage />
+    </main>
   </StrictMode>,
 )
